@@ -30,6 +30,14 @@ app.get("/", (req, res) => {
     require("./Routes/AuthenticationRoute")(app);
   
 
+  
+    require("./Routes/ProductRoute")(app);
+  
+
+  
+    require("./Routes/CartRoute")(app);
+  
+
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);

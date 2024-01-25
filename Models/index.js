@@ -22,5 +22,9 @@ db.sequelize = sequelize;
 
 db.authentication = require('./model.js')(sequelize, Sequelize).authentication;
 
+db.product = require('./model.js')(sequelize, Sequelize).product;
+
+db.cart = require('./model.js')(sequelize, Sequelize).cart;
+
 
 module.exports = db;
